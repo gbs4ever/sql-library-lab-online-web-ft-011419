@@ -12,7 +12,7 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT DISTINCT Authors.name , Subgenres.name  From Authors JOIN series ON Authors.id = series.author_id JOIN  Subgenres  ON series.id = series.subgenre_id  ;"
+  "SELECT Authors.name , Subgenres.name  From Authors JOIN series ON Authors.id = series.author_id JOIN  Subgenres  ON series.id = series.subgenre_id  ;"
 end
 
 def select_series_title_with_most_human_characters
